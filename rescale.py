@@ -13,6 +13,10 @@ def rescaleFrame(frame,scale=0.75):
     height = int(frame.shape[0] * scale)
     dimensions = (width,height)
     return cv.resize(frame,dimensions,interpolation=cv.INTER_AREA)
+img = cv.imread('./ikun.jpg')
+resize_img = rescaleFrame(img)
+cv.imshow('ikun',img)
+cv.imshow('rescaleikun',resize_img)
 
 capture = cv.VideoCapture('./ikun.mp4')
 
