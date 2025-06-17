@@ -34,8 +34,14 @@ blank = np.zeros((500,500,3),dtype='uint8')
 # blank[:] = 0,0,255
 # cv.imshow('Red',blank)
 
-cv.rectangle(blank,(100,251),(300,100),(0,255,0),thickness=3)
+cv.rectangle(blank,(0,0),(250,250),(0,255,0),thickness=3)
 cv.imshow('rectangle',blank)
+
+cv.line(blank,(100,250),(300,400),(0,0,255),thickness=3)
+cv.imshow('line',blank)
+
+cv.putText(blank,'helloworld',(250,250),cv.FONT_HERSHEY_TRIPLEX,1.0,(0,0,255),thickness=2)
+cv.imshow('putText',blank)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
