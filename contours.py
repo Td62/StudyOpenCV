@@ -64,10 +64,8 @@ print(f'{len(contours)} 个轮廓被检测到')
 # color: BGR元组，如(0, 0, 255)表示红色
 # thickness: 线宽（-1表示填充轮廓）
 cv.drawContours(blank, contours, -1, (0,0,255), 1)
-# 显示绘制了轮廓的图像
+
 cv.imshow('drawContours', blank)
 
-# 等待任意按键按下（0表示无限等待）
 cv.waitKey(0)
-# 销毁所有OpenCV创建的窗口
 cv.destroyAllWindows()
