@@ -51,8 +51,6 @@ cv.imshow('combined_sobel', combined_sobel)
 # 参数：输入图像，低阈值，高阈值
 # 二值边缘图像（非边缘为0，边缘为255）
 canny = cv.Canny(gray, 150, 175)  
-# 显示Canny边缘检测结果
 cv.imshow('canny', canny)
 
-# 等待键盘输入(0表示无限等待)
 cv.waitKey(0)
