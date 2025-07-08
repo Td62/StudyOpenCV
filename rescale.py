@@ -26,7 +26,8 @@ while True:
     frame_resized = rescaleFrame(frame)
     cv.imshow('Video',frame)
     cv.imshow('VideoResized', frame_resized)
-
+    if not isTrue:
+        break
     if cv.waitKey(30)& 0xFF==ord('q'):
         break
 capture.release()

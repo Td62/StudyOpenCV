@@ -10,6 +10,8 @@ capture = cv.VideoCapture('./ikun.mp4')
 while True:
     isTrue,frame= capture.read()
     cv.imshow('Video',frame)
+    if not isTrue:
+        break
     if cv.waitKey(30)& 0xFF==ord('q'):
         break
 capture.release()
