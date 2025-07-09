@@ -20,7 +20,7 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 # 从文件加载之前训练好的模型
 face_recognizer.read('face_trained.yml')
 # 读取要识别的测试图像
-img = cv.imread(r'/home/td/Code/StudyOpenCV/Faces/val/ben_afflek/2.jpg')
+img = cv.imread(r'./Faces/val/ben_afflek/2.jpg')
 # 人脸识别通常在灰度图上进行，因为颜色信息对于识别不是必需的
 gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 cv.imshow('person',gray)

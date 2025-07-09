@@ -5,7 +5,7 @@ import numpy as np
 # 识别的人员列表
 people = ['Ben Afflek','Elton John','Jerry Seinfield','Madonna','Mindy Kaling']
 # 设置训练数据目录路径（使用原始字符串避免转义问题）
-DIR = r'/home/td/Code/StudyOpenCV/Faces/train'
+DIR = r'./Faces/train'
 
 # 用于存储检测到的人脸特征（图像区域）
 features = []
