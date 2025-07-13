@@ -3,7 +3,7 @@ import numpy as np
 
 # 定义要识别的人员列表
 # 这个列表必须与训练时使用的列表完全一致（顺序和内容）
-people = ['Ben Afflek','Elton John','Jerry Seinfield','Madonna','Mindy Kaling']
+people = ['Ben Afflek','Elton John','Jerry Seinfield','Madonna','Mindy Kaling','ciaojiang']
 
 # 加载Haar级联分类器用于人脸检测
 # 这个XML文件包含训练好的特征，用于在图像中定位人脸

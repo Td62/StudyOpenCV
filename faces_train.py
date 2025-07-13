@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 
 # 识别的人员列表
-people = ['Ben Afflek','Elton John','Jerry Seinfield','Madonna','Mindy Kaling']
+people = ['Ben Afflek','Elton John','Jerry Seinfield','Madonna','Mindy Kaling','ciaojiang']
 # 设置训练数据目录路径（使用原始字符串避免转义问题）
 DIR = r'./Faces/train'
 
